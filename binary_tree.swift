@@ -1,4 +1,3 @@
-
 class BinaryTree {
     
     var data: Int?
@@ -29,8 +28,7 @@ class BinaryTree {
                     
                 } else {
                     
-                    var tree = BinaryTree()
-                    tree.data = d
+                    var tree = BinaryTree(d)
                     self.left = tree
                 }
                 
@@ -42,8 +40,7 @@ class BinaryTree {
                     
                 } else {
                     
-                    var tree = BinaryTree()
-                    tree.data = d
+                    var tree = BinaryTree(d)
                     self.right = tree
                 }
             }
@@ -72,4 +69,4 @@ var tree = BinaryTree(5)
 tree.insert(2)
 tree.insert(7)
 
-println(tree.right!.data)
+println(tree.left!.data)
